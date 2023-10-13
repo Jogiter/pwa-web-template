@@ -178,25 +178,9 @@ export default defineNuxtConfig({
     },
 
     workbox: {
-      // for spa
+      // This is meant to be used in a Single Page App scenario, in which you want all navigations to use common App Shell HTML.
       navigateFallback: '/',
       // globPatterns: ['**/*.{js,css,html,png,svg,ico}'],
-      // clientsClaim: true,
-      // skipWaiting: true,
     },
-    client: {
-      // installPrompt: true,
-      // you don't need to include this: only for testing purposes
-      // if enabling periodic sync for update use 1 hour or so (periodicSyncForUpdates: 3600)
-      periodicSyncForUpdates: 2,
-    },
-
-    // must setup to enable workbox
-    // devOptions: {
-    //   enabled: true,
-    //   suppressWarnings: true,
-    //   navigateFallbackAllowlist: [/^\/$/],
-    //   type: 'module',
-    // },
   },
 })

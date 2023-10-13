@@ -4,10 +4,9 @@
     <NuxtPage />
   </NuxtLayout>
   <client-only>
-    <div id="pwa" class="fixed top-[100px] right-10 bg-[#ff0000] z-[99999]">
+    <div v-if="$pwa.needRefresh" class="fixed top-[100px] right-10 bg-[#ff0000] z-[99999]">
       <span>
-        New content available {{ $pwa.needRefresh }}, click on reload button to
-        update 112233.
+        New content available, click on reload button to update.
       </span>
 
       <button @click="onreload">Reload</button>
