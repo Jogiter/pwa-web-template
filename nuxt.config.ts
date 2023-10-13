@@ -125,7 +125,7 @@ export default defineNuxtConfig({
 
   pwa: {
     // registerType?: 'prompt' | 'autoUpdate'
-    registerType: 'prompt',
+    // registerType: 'prompt',
     manifest: {
       name: 'Nuxt Vite PWA',
       short_name: 'NuxtVitePWA',
@@ -182,16 +182,16 @@ export default defineNuxtConfig({
     workbox: {
       // for spa
       navigateFallback: '/',
-      globPatterns: ['**/*.{js,css,html,png,svg,ico}'],
-      clientsClaim: true,
-      skipWaiting: true,
+      // globPatterns: ['**/*.{js,css,html,png,svg,ico}'],
+      // clientsClaim: true,
+      // skipWaiting: true,
     },
-    client: {
-      installPrompt: true,
-      // you don't need to include this: only for testing purposes
-      // if enabling periodic sync for update use 1 hour or so (periodicSyncForUpdates: 3600)
-      periodicSyncForUpdates: 20,
-    },
+    // client: {
+    //   installPrompt: true,
+    //   // you don't need to include this: only for testing purposes
+    //   // if enabling periodic sync for update use 1 hour or so (periodicSyncForUpdates: 3600)
+    //   periodicSyncForUpdates: 20,
+    // },
 
     // must setup to enable workbox
     devOptions: {
