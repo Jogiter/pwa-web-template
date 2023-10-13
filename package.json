@@ -1,0 +1,45 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "latest",
+    "@nuxt/image": "^1.0.0-rc.1",
+    "@nuxtjs/color-mode": "^3.3.0",
+    "@nuxtjs/i18n": "^8.0.0-beta.12",
+    "@nuxtjs/tailwindcss": "^6.8.0",
+    "@types/node": "^18",
+    "@vite-pwa/nuxt": "^0.1.1",
+    "@vueuse/core": "^10.3.0",
+    "@vueuse/nuxt": "^10.3.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.3",
+    "nuxt": "^3.6.5",
+    "prettier": "3.0.0",
+    "tailwind-scrollbar": "^3.0.4"
+  },
+  "dependencies": {
+    "@onesignal/onesignal-vue3": "^2.0.1",
+    "@pinia/nuxt": "^0.4.11",
+    "@types/ua-parser-js": "^0.7.36",
+    "animate.css": "^4.1.1",
+    "pinia": "^2.1.4",
+    "swiper": "^10.0.4",
+    "tailwind-animatecss": "^1.0.0",
+    "ua-parser-js": "^1.0.35"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  },
+  "overrides": {
+    "vue": "latest"
+  }
+}

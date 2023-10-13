@@ -1,0 +1,173 @@
+{
+  "seo": {
+    "title": "Empowering Cryptocurrency for Comprehensive Payment Solutions - UnnPay",
+    "description": "UnnPay is a multi-chain decentralized wallet that enables full-scenario cryptocurrency payment, connects merchants and customers, and establishes payment and collection channels. Download the iOS and Android version of the UNN wallet now, and apply for access to the API experience!",
+    "keywords": "UnnPay, UNN, Wallet, Wallet, Merchant Payment, Merchant Wallet, Digital Currency, Merchant, Enterprise, Bitcoin, Blockchain, Quantitative Transaction, Cryptocurrency, Currency Circle, NFT, BTC, ETH, USDT, Binance, Huobi , coin, finance, stock, finance, market, IMtoken, MetaMask"
+  },
+  "common": {
+    "ios": "iOS",
+    "android": "Android"
+  },
+  "home": {
+    "navigation": {
+      "name": "UnnPay",
+      "home": "Home Page",
+      "guide": "Access Guide",
+      "doc": "API Documentation",
+      "download": "Download",
+      "language": "Language",
+      "access": "Apply for access",
+      "mode": {
+        "dark": "Dark Model",
+        "light": "Light Model"
+      },
+      "downloadTips": "Scan the QR code or click {ios}, {android} to download the mobile client"
+    },
+    "part1": {
+      "title0": "What's UnnPay?",
+      "title1": "Provide Cryptocurrency payment service",
+      "desc": "Connect merchants and customers, establish payment and collection channels",
+      "button": "Download",
+      "download": {
+        "title0": "Andriod",
+        "desc0": "DOWNLOAD APK 6.0+",
+        "title1": "App Store",
+        "desc1": "DOWNLOAD ON THE",
+        "tips": "An App Store overseas account is required"
+      }
+    },
+    "part2": {
+      "title": "Core Functions",
+      "left0": {
+        "title": "Customer recharge",
+        "desc": "Generate an independent and dedicated payment code for customers, which is convenient for merchants to collect payments"
+      },
+      "left1": {
+        "title": "Daily Operation Report",
+        "desc": "Generate analysis reports on a daily basis to clearly grasp customer deposit and withdrawal trends"
+      },
+      "right0": {
+        "title": "Customer Withdrawal",
+        "desc": "Withdrawal + review, safe and convenient review withdrawal process"
+      },
+      "right1": {
+        "title": "Enterprise management",
+        "desc": "Provide multi-dimensional management of merchants' daily assets, operations, customer employees, etc"
+      }
+    },
+    "part3": {
+      "title": "More Function",
+      "item0": "Multi company, multi ledger management",
+      "item1": "Automatic collection of customer's collection funds",
+      "item2": "Miner fees paid on behalf of the platform",
+      "item3": "Panoramic data analysis",
+      "item4": "Multi company, multi ledger management",
+      "item5": "Customer Information Management"
+    },
+    "part4": {
+      "title": "Our Advantage",
+      "item0": "Support multi-chain, multi-currency decentralized on-chain receipt and payment service",
+      "item1": "Use smart contract accounts to realize merchant wallet logic and reduce manual verification costs",
+      "item2": "Provide multi-company, multi-account enterprise management services",
+      "item3": "Customer independent collection and withdrawal account to avoid confusion in customer withdrawals and reduce manual verification costs"
+    },
+    "part5": {
+      "title": "Quick Access for Developers",
+      "desc": "UnnPay can be easily integrated with just a few lines of code. Developers can use our API to deliver faster and focus on what matters",
+      "button": "API Documentation"
+    },
+    "part6": {
+      "title": "Integrator"
+    },
+    "part7": {
+      "title": "Access Process",
+      "item0": "Submit Application",
+      "item1": "Business Matchmaking",
+      "item2": "UnnPay",
+      "item3": "Technical Docking",
+      "item4": "Complete Online"
+    },
+    "part8": {
+      "address": "© UnnPay {0}",
+      "docs": {
+        "title": "API Documentation",
+        "link0": "Get Access Token interface",
+        "link1": "Create contract account interface",
+        "link2": "Permission configuration interface",
+        "link3": "User deposit - query deposit address, assign deposit address",
+        "link4": "User withdrawal",
+        "link5": "Review withdrawal",
+        "link6": "Other Settings - Exemption Quota Settings"
+      },
+      "products": {
+        "title": "Prouducts",
+        "link0": "iOS APP",
+        "link1": "Android APP"
+      }
+    },
+    "accessPopup": {
+      "title": "API Access{br}operation process",
+      "step1": {
+        "title": "1.Get invitation code",
+        "item1": "Telegram",
+        "item2": "Email"
+      },
+      "step2": {
+        "title": "2.Download UNN APP, enter the application center to open UnnPay merchant service",
+        "desc": "Click \"UnnPay\" in the application center and enter the 「invitation code」 to activate"
+      },
+      "step3": {
+        "title": "3.Access API",
+        "title-small": "API documentation"
+      }
+    }
+  },
+  "guide": {
+    "part1": {
+      "title": "Access Guide"
+    },
+    "part2": {
+      "title": "Payment Product",
+      "item0": {
+        "title": "APP Payment",
+        "description": "A payment product that the merchant integrates UNN SDK in the merchant's mobile APP and calls UNN to complete the payment"
+      },
+      "item1": {
+        "title": "Mobile Website Payment",
+        "description": "The merchant displays goods or services on the mobile webpage. After the user confirms the use of UnnPay on the merchant page, the browser automatically jumps to the UNN APP or UNN webpage to complete the payment"
+      },
+      "item2": {
+        "title": "PC Website Payment",
+        "description": "The merchant displays goods or services on the computer webpage. When the user confirms the payment with UnnPay on the merchant page, the browser automatically jumps to the UNN webpage to complete the payment."
+      },
+      "item3": {
+        "title": "Face-to-face Payment in offline stores",
+        "description": "A payment product that the merchant scans the user's payment code to collect money or the user scans the merchant's QR code to pay"
+      }
+    },
+    "part3": {
+      "title": "Application Scenario",
+      "item0": {
+        "title": "Online Payment",
+        "description": "Online recharge、 payment、 fee payment"
+      },
+      "item1": {
+        "title": "Smart Retail",
+        "description": "Online shopping mall、 O2O service、 performance ticketing"
+      },
+      "item2": {
+        "title": "Financial Services",
+        "description": "Quantitative financial management, asset management, collection and payment services"
+      },
+      "item3": {
+        "title": "Physical Business",
+        "description": "Store retail、 smart catering、 fitness club"
+      }
+    },
+    "part4": {
+      "title": "Solution",
+      "tab0": "Collection",
+      "tab1": "Withdrawal"
+    }
+  }
+}

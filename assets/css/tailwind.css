@@ -1,0 +1,173 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 阿里妈妈方圆体-圆角配置 */
+:root {
+  --BEVL: 1;
+}
+
+@layer base {
+  @font-face {
+    font-family: 'alimama';
+    src:
+      url('/fonts/ali-mama/AlimamaFangYuanTiVF-Thin.woff2') format('woff2'),
+      url('/fonts/ali-mama/AlimamaFangYuanTiVF-Thin.woff') format('woff'),
+      url('/fonts/ali-mama/AlimamaFangYuanTiVF-Thin.ttf') format('TrueType');
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'alibaba';
+    src:
+      url('/fonts/ali-baba/AlibabaPuHuiTi-2-55-Regular.woff2') format('woff2'),
+      url('/fonts/ali-baba/AlibabaPuHuiTi-2-55-Regular.woff') format('woff'),
+      url('/fonts/ali-baba/AlibabaPuHuiTi-2-55-Regular.ttf') format('TrueType'),
+      url('/fonts/ali-baba/AlibabaPuHuiTi-2-55-Regular.otf') format('opentype'),
+      url('/fonts/ali-baba/AlibabaPuHuiTi-2-55-Regular.eot')
+        format('embedded-opentype');
+    font-display: swap;
+  }
+}
+@layer utilities {
+  .underline-opening a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+  }
+  .underline-opening a::after {
+    position: absolute;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    bottom: -4px;
+    transform: scale(0, 1);
+    transition: transform 0.3s;
+    transform-origin: center top;
+  }
+  .underline-opening a:hover::after {
+    transform: scale(1, 1);
+  }
+
+  /* 文字链 & 按钮悬浮态处理 */
+  .link-white {
+    @apply text-dark-200  hover:text-gray-darker focus:text-gray-darker active:text-gray-darker dark:text-gray-default dark:hover:text-gray-dark dark:focus:text-gray-dark dark:active:text-gray-dark;
+  }
+
+  .link-gray {
+    @apply text-gray-darker hover:text-dark-200 focus:text-dark-200 active:text-dark-200 dark:text-gray-dark dark:hover:text-gray-default dark:focus:text-gray-default dark:active:text-gray-default;
+  }
+
+  .btn {
+    @apply text-white bg-primary-darker hover:bg-primary-darkest focus:bg-primary-darkest active:bg-primary-darkest dark:text-gray-default dark:bg-primary-default dark:hover:bg-primary-dark dark:focus:bg-primary-dark dark:active:bg-primary-dark;
+  }
+}
+
+@layer components {
+  /* dropdown */
+  .dropdown {
+    @apply relative inline-block;
+  }
+  .dropdown > *:focus {
+    @apply outline-none;
+  }
+  .dropdown .dropdown-content {
+    @apply absolute;
+  }
+  .dropdown:is(:not(details)) .dropdown-content {
+    @apply invisible opacity-0;
+  }
+  .dropdown-end .dropdown-content {
+    @apply right-0;
+  }
+  .dropdown-left .dropdown-content {
+    @apply top-0 right-full bottom-auto;
+  }
+  .dropdown-right .dropdown-content {
+    @apply left-full top-0 bottom-auto;
+  }
+  .dropdown-bottom .dropdown-content {
+    @apply bottom-auto top-full;
+  }
+  .dropdown-top .dropdown-content {
+    @apply bottom-full top-auto;
+  }
+  .dropdown-end.dropdown-right .dropdown-content {
+    @apply bottom-0 top-auto;
+  }
+  .dropdown-end.dropdown-left .dropdown-content {
+    @apply bottom-0 top-auto;
+  }
+  .dropdown.dropdown-open .dropdown-content,
+  .dropdown:not(.dropdown-hover):focus .dropdown-content,
+  .dropdown:focus-within .dropdown-content {
+    @apply visible opacity-100;
+  }
+  @media (hover: hover) {
+    .dropdown.dropdown-hover:hover .dropdown-content {
+      @apply visible opacity-100;
+    }
+  }
+  .dropdown:is(details) summary::-webkit-details-marker {
+    @apply hidden;
+  }
+
+  .dropdown:is(:not(details)) .dropdown-content {
+    @apply origin-top scale-95 transform transition duration-200 ease-in-out;
+  }
+  .dropdown-bottom .dropdown-content {
+    @apply origin-top;
+  }
+  .dropdown-top .dropdown-content {
+    @apply origin-bottom;
+  }
+  .dropdown-left .dropdown-content {
+    @apply origin-right;
+  }
+  .dropdown-right .dropdown-content {
+    @apply origin-left;
+  }
+  .dropdown.dropdown-open .dropdown-content,
+  .dropdown:focus .dropdown-content,
+  .dropdown:focus-within .dropdown-content {
+    @apply scale-100;
+  }
+  @media (hover: hover) {
+    .dropdown.dropdown-hover:hover .dropdown-content {
+      @apply scale-100;
+    }
+  }
+}
+
+.collapsing {
+  -webkit-transition: height 0.35s ease;
+  transition: height 0.35s ease;
+}
+
+/* swiper hack: each slide same height */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  height: auto !important;
+}
+
+/* logo text handling */
+.unnpay svg {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.svg-h-auto svg {
+  height: auto !important;
+}
+
+/* content classes */
+@layer components {
+  .unn-content-tips p {
+    @apply !text-[#A9AEB8] dark:!text-[#727583];
+  }
+}
