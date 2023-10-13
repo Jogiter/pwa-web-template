@@ -7,7 +7,7 @@
     <div id="pwa" class="fixed top-[100px] right-10 bg-[#ff0000] z-[99999]">
       <span>
         New content available {{ $pwa.needRefresh }}, click on reload button to
-        update 123456.
+        update 11.
       </span>
 
       <button @click="onreload">Reload</button>
