@@ -34,6 +34,11 @@ onMounted(() => {
 const onreload = () => {
   console.error('reload called')
   $pwa.updateServiceWorker()
+
+  nextTick(() => {
+    console.error('reload called nextTick');
+    location.reload();
+  });
 }
 
 useHead({
