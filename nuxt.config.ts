@@ -125,7 +125,7 @@ export default defineNuxtConfig({
 
   pwa: {
     // registerType?: 'prompt' | 'autoUpdate'
-    // registerType: 'prompt',
+    registerType: 'prompt',
     manifest: {
       name: 'Nuxt Vite PWA',
       short_name: 'NuxtVitePWA',
@@ -183,8 +183,8 @@ export default defineNuxtConfig({
       // for spa
       navigateFallback: '/',
       globPatterns: ['**/*.{js,css,html,png,svg,ico}'],
-      // clientsClaim: true,
-      // skipWaiting: true,
+      clientsClaim: true,
+      skipWaiting: true,
     },
     client: {
       installPrompt: true,
