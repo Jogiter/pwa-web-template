@@ -16,6 +16,10 @@
 </template>
 
 <script setup>
+if (typeof window !== 'undefined') {
+  import('./pwa')
+}
+
 const { t } = useI18n()
 const { $pwa } = useNuxtApp()
 
